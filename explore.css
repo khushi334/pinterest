@@ -296,3 +296,114 @@ body {
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.5);
 }
+
+@media (max-width: 768px) {
+  .pinterest-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .left {
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .search-container {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .search-bar {
+    width: 100%;
+  }
+
+  .auth-buttons {
+    flex-direction: row;
+    gap: 8px;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .middle {
+    padding: 40px 20px;
+  }
+
+  .best h1 {
+    font-size: 36px;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-top: 20px;
+  }
+
+  .card {
+    width: 90%;
+    height: auto;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card h3 {
+    font-size: 24px;
+    padding: 8px;
+  }
+
+  .browse h2 {
+    font-size: 32px;
+  }
+
+  .browse-card {
+    width: 160px;
+    height: 100px;
+  }
+
+  .browse-card h4 {
+    font-size: 14px;
+  }
+
+  .new h3 {
+    font-size: 28px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-card {
+    width: 90%;
+  }
+
+  .container-card img {
+    width: 100%;
+  }
+
+  .modal img {
+    width: 90%;
+  }
+
+  .see-more {
+    width: 90%;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .signup-btn,
+  .login-btn {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+}
