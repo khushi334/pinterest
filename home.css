@@ -1,0 +1,494 @@
+        
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  font-family: 'Segoe UI', sans-serif;
+}
+.logo{
+    color: red;
+    font-size: 22px;
+}
+
+.logo img {
+  height: 30px; 
+  width: auto;
+}
+
+
+nav {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #e60023;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.auth-buttons button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.auth-buttons .login {
+  background-color: #e60023;
+  color: white;
+}
+
+.auth-buttons .signup {
+  background-color: #efefef;
+  color: #333;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+}
+
+.first{
+   column-count: 6;
+      column-gap: 8px;
+      padding: 16px;
+      height: 100%;
+      overflow-y: auto;
+      
+ 
+}
+
+.first img {
+  width: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+      height: 220px;
+      filter: blur(1);
+      mask-image: radial-gradient(circle at center, rgba(0,0,0,1) 60%, rgba(0,0,0,0.3) 90%, rgba(0,0,0,0) 100%);
+  -webkit-mask-image: radial-gradient(circle at center, rgba(0,0,0,1) 60%, rgba(0,0,0,0.3) 90%, rgba(0,0,0,0) 100%);
+}
+.overlay-text {
+      position: absolute;
+      max-width: 600px;
+      top: 370px;
+      left: 300px;
+      color: white;
+      font-size: 52px;
+      font-weight: bold;
+      max-width: 300px;
+      z-index: 10;
+      line-height: 1.2;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    }
+
+    .right-pane {
+  position: absolute;
+  top: 70px;
+  right: 110px;
+  width: 400px;
+  padding: 32px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  height: 656px;
+}
+
+.right-pane h2 {
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.right-pane h4 {
+  font-size: 16px;
+  margin: 1px 0 2px 0;
+  font-weight: 500;
+}
+
+    .form-container input {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.form-container input:focus {
+  border-color: #e60023;
+  outline: none;
+}
+
+.form-container a {
+  font-size: 14px;
+  color: #e60023;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.login-btn,
+.facebook-btn,
+.google-btn,
+.qr-btn {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-btn {
+  background-color: #e60023;
+  color: white;
+}
+
+.facebook-btn {
+  background-color: #4267B2;
+  color: white;
+}
+
+.google-btn {
+  background-color: #ffffff;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.qr-btn {
+  background-color: #efefef;
+  color: #333;
+}
+
+.divider {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 14px;
+  color: #999;
+}
+
+.terms, .signup {
+  font-size: 12px;
+  color: #666;
+  margin-top: 9px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.terms a,
+.signup a {
+  color: #e60023;
+  text-decoration: none;
+  font-weight: 500;
+}.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+#password {
+  flex: 1;
+  padding-right: 40px; /* give space for the button */
+}
+
+#togglePassword {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+.second-page{
+  height: 1000px;
+  width: 1500px;
+
+}
+.text-part{
+  padding-top: 230px;
+  text-align: center;
+}
+
+.fixed{
+  font-size: 50px;
+}
+#text {
+      font-size: 43px;
+      font-weight: bold;
+      color: #222;
+      transition: opacity 0.5s ease-in-out,color 0.5s ease-in-out;
+      text-align: center;
+    }
+
+
+    .carousel-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  padding: 16px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-track {
+  display: flex;
+  align-items: flex-end;
+  gap: 17px;
+  padding: 0 20px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-track img {
+  width: 200px;
+  height: 260px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  mask-image: radial-gradient(circle at center, rgba(0,0,0,1) 60%, rgba(0,0,0,0.3) 90%, rgba(0,0,0,0) 100%);
+  -webkit-mask-image: radial-gradient(circle at center, rgba(0,0,0,1) 60%, rgba(0,0,0,0.3) 90%, rgba(0,0,0,0) 100%);
+}
+
+.carousel-track img:hover {
+  transform: scale(1.05);
+}
+.carousel-track img:nth-child(1),
+.carousel-track img:nth-child(7) {
+  height: 470px; 
+}
+.carousel-track img:nth-child(2),
+.carousel-track img:nth-child(6) {
+  height: 400px; 
+}
+.carousel-track img:nth-child(3),
+.carousel-track img:nth-child(5) {
+  height: 330px; 
+}
+
+.third-page {
+  background-color: #c6f3ec;
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 80px;
+  font-family: 'Segoe UI', sans-serif;
+}
+.left-part{
+  padding-top: 200px;
+  padding-left: 140px;
+  padding-bottom: 200px;
+}
+
+.left-part h1 {
+  font-size: 65px;
+  color: #004b4f;
+}
+
+.left-part p {
+  font-size: 30px;
+  color: #205052;
+}
+
+.explore {
+  margin-top: 30px;
+  padding: 12px 26px;
+  font-size: 18px;
+  background-color: #e60023;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.right {
+  display: flex;
+  gap: 20px;
+  padding-top: 50px;
+  max-width: 700px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.column:first-child {
+  width: 320px; /* large + medium */
+}
+
+.column:last-child {
+  width: 160px; /* 3 medium images stacked */
+}
+
+.image-box {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  color: white;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.image-box:hover img {
+  transform: scale(1.05);
+}
+
+.image-box h2 {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  font-size: 20px;
+  line-height: 1.2;
+  width: 80%;
+}
+
+.image-box.large {
+  width: 320px;
+  height: 370px;
+}
+
+.image-box.medium {
+  width: 160px;
+  height: 160px;
+}
+
+
+
+
+.forth-page{
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 80px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: pink;
+
+}
+
+.forth-right{
+  padding-top: 170px;
+  padding-right: 60px;
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  padding-bottom: 130px;
+}
+.forth-right p {
+  font-size: 22px;
+  color: #333;
+  line-height: 1.5;
+}
+.forth-right h1{
+  font-size: 50px;
+  color: #f15d73;
+}
+.big-image {
+  position: relative; /* This is required */
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.big-image img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  border-radius: 30px;
+  display: block;
+  transition: transform 0.4s ease;
+  mask-image: radial-gradient(circle at center, rgba(0,0,0,1) 60%, rgba(0,0,0,0.3) 90%, rgba(0,0,0,0) 100%);
+  -webkit-mask-image: radial-gradient(circle at center, rgba(0,0,0,1) 60%, rgba(0,0,0,0.3) 90%, rgba(0,0,0,0) 100%);
+}
+.big-image:hover img {
+  transform: scale(1.05);
+}
+
+.small-image {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease
+}
+.small-image img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+.small-image img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+.forth-left {
+  width: 50%;
+}
+
+
+.small-image h3 {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+  line-height: 1.3;
+}
+.big-image:hover img,
+.small-image img:hover {
+  cursor: pointer;
+}
+
+.explore {
+  background-color: #f15d73;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.explore:hover {
+  background-color: #e14b63;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
