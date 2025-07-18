@@ -492,3 +492,125 @@ body {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
+
+
+@media screen and (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 16px;
+  }
+
+  nav {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .auth-buttons {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .first {
+    column-count: 2;
+    padding: 10px;
+  }
+
+  .overlay-text {
+    font-size: 24px;
+    top: 200px;
+    left: 20px;
+    max-width: 90%;
+  }
+
+  .right-pane {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 20px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .second-page,
+  .third-page,
+  .forth-page {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .left-part,
+  .forth-right,
+  .forth-left {
+    padding: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .left-part h1,
+  .forth-right h1 {
+    font-size: 32px;
+  }
+
+  .left-part p,
+  .forth-right p {
+    font-size: 18px;
+  }
+
+  .right {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carousel-track {
+    justify-content: flex-start;
+    padding: 0 10px;
+  }
+
+  .carousel-track img {
+    width: 150px;
+    height: 200px;
+  }
+
+  .big-image img {
+    height: 300px;
+  }
+
+  .small-image {
+    position: static;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .text-part {
+    padding-top: 120px;
+  }
+
+  .fixed {
+    font-size: 32px;
+  }
+
+  #text {
+    font-size: 28px;
+  }
+
+  .form-container input,
+  .login-btn,
+  .facebook-btn,
+  .google-btn,
+  .qr-btn {
+    font-size: 16px;
+  }
+
+  .toast {
+    bottom: 20px;
+    right: 10px;
+    min-width: auto;
+    font-size: 12px;
+    padding: 8px 14px;
+  }
+}
