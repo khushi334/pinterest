@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="explore.css">
+</head>
+<body>
+    <header class="pinterest-header">
+        <div class="left">
+            <a href="home.html">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png" alt="Pinterest Logo" class="logo">
+            </a>
+            <span class="explore">Explore</span>
+        </div>
+
+        <div class="search-container">
+            <div class="search-bar">
+                <span class="search-icon">🔍</span>
+                    <input type="text" id="searchInput" placeholder="Search for easy dinners, fashion, etc.">
+            </div>
+            <ul class="suggestions" id="suggestionList"></ul>
+        </div>
+
+        <div class="auth-buttons">
+            <button class="login-btn">Log in</button>
+            <button class="signup-btn">Sign up</button>
+        </div>
+    </header>
+
+    <div class="middle">
+        <div class="best">
+            <h1>Explore the best of Pinterest</h1>
+            <div class="row">
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/2166429659/photo/young-girl-holding-laptop-and-looking-up.webp?a=1&b=1&s=612x612&w=0&k=20&c=9L_u6X_DDjP3FpityuIpTQKIpBJGleV8zGhXVTE1i8Q=">
+                    <h3>Main Character college prep</h3>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1609803384069-19f3e5a70e75?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2NhcmYlMjBzdHlsaW5nfGVufDB8fDB8fHww">
+                    <h3>Scarf styling</h3>
+                </div>
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/91348928/photo/woman-hand.jpg?s=612x612&w=0&k=20&c=kJsZa3Yg5eHLSr9Y7R2ggrsF0t5sVg8kVJGTvnlUYfs=">
+                    <h3>Micro fruit nails</h3>
+                </div>
+            </div>
+
+            <div class="row hidden-row" id="extraRow">
+                <div class="card">
+                    <img src="https://plus.unsplash.com/premium_photo-1689247409718-48408527fe97?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y3JvY2hldCUyMGJhZ3N8ZW58MHx8MHx8fDA%3D">
+                    <h3>Crochet bags</h3>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1574291814206-363acdf2aa79?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fERJWXxlbnwwfHwwfHx8MA%3D%3D">
+                    <h3>Simple DIY crafts</h3>
+                </div>
+                <div class="card">
+                    <a href="makeup.html">
+                    <img src="https://images.unsplash.com/photo-1643166406762-894b50b397f1?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWFrZXVwJTIwaGFja3N8ZW58MHx8MHx8fDA%3D">
+                    <h3>Makeup hacks</h3></a>
+                </div>
+            </div>
+           <div class="see-more-container">
+                <button class="see-more" onclick="showMore()">See more</button>
+            </div>
+        </div>
+        <div class="browse">
+            <h2>Browse by category</h2>
+            <div class="first-row">
+                <div class="browse-card">
+                    <a href="animal.html" class="browse-card">
+                    <img src="https://plus.unsplash.com/premium_photo-1694819488591-a43907d1c5cc?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8RG9nfGVufDB8fDB8fHww">
+                    <h4>Animal</h4></a>
+                </div>
+                <div class="browse-card">
+                    <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8QXJ0fGVufDB8fDB8fHww">
+                    <h4>Art</h4>
+                </div>
+                <div class="browse-card">
+                    <img src="https://plus.unsplash.com/premium_photo-1684407616442-8d5a1b7c978e?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmVhdXR5fGVufDB8fDB8fHww">
+                    <h4>Beauty</h4>
+                </div>
+                <div class="browse-card">
+                    <img src="https://plus.unsplash.com/premium_photo-1664110691109-6558cb5ea476?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8ZGVzaWdufGVufDB8fDB8fHww">
+                    <h4>Design</h4>
+                </div>
+                <div class="browse-card">
+                    <img src="https://plus.unsplash.com/premium_photo-1675799768477-ecde08d281ae?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8RElZJTIwYW5kJTIwY3JhZnRzfGVufDB8fDB8fHww">
+                    <h4>DIY And Crafts</h4>
+                </div>
+            </div>
+            <div class="first-row">
+                <div class="browse-card">
+                    <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Zm9vZCUyMGFuZCUyMGRyaW5rc3xlbnwwfHwwfHx8MA%3D%3D">
+                    <h4>Food And Drink</h4>
+                </div>
+                <div class="browse-card">
+                    <a href="decor.html">
+                    <img src="https://images.unsplash.com/photo-1616046229478-9901c5536a45?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG9tZSUyMGRlY29yfGVufDB8fDB8fHww">
+                    <h4>Home Decor</h4></a>
+                </div>
+                <div class="browse-card">
+                    <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D">
+                    <h4>Fashion</h4>
+                </div>
+                <div class="browse-card">
+                    <img src="https://images.unsplash.com/photo-1606607291535-b0adfbf7424f?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cXVvdGVzfGVufDB8fDB8fHww">
+                    <h4>Quotes</h4>
+                </div>
+                <div class="browse-card">
+                    <img src="https://images.unsplash.com/photo-1586243287039-23f4c8e2e7ab?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dGF0dG9vc3xlbnwwfHwwfHx8MA%3D%3D">
+                    <h4>Tattoos</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="new">
+            <h3>What's new on Pinterest</h3>
+            <div class="container">
+                <div class="container-row">
+                    <div class="container-card">
+                        <img src="https://images.unsplash.com/photo-1668127573831-8928daa6aefa?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8R2lmdCUyMGhhbXBlcnxlbnwwfHwwfHx8MA%3D%3D">
+                        <h4>Gift hamper for bestfriend</h4>
+                        <p>#giftsforher #birthday #bestfriend #giftbasket #jellycat</p>
+                    </div>
+                    <div class="container-card">
+                        <img src="https://images.unsplash.com/photo-1549236177-77e8271c34b6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aGFpcnN0eWxlfGVufDB8fDB8fHww">
+                        <h4>Hairstyle for brides</h4>
+                        <p>"Soft curls for the sweetest ‘I do.’"</p>
+                    </div>
+                    <div class="container-card">
+                        <img src="data:image/jpeg;base64,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">
+                        <h4>Aesthetic wall decor</h4>
+                        <p>Looks elegant and classy # differnet #royal</p>
+                    </div>
+                    <div class="container-card">
+                        <img src="https://media.istockphoto.com/id/966557854/photo/young-florist-woman-holding-freshly-made-blossoming-flower-bouquet-of-roses-and-eucalyptus-on.jpg?s=612x612&w=0&k=20&c=Vl0N5LKhbGqWZGK2Wy_7dyM3puwAb-Oet-cie4NzeOw=">
+                        <p>#flower bauquet #roses #love #gift</p>
+                        <p>Give it to your loved ones</p>
+                    </div>
+                    <div class="container-card">
+                        <img src="https://images.unsplash.com/photo-1612203985729-70726954388c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGN1cGNha2VzfGVufDB8fDB8fHww">
+                        <p>Cupckaes💕🧁🧁</p>
+                    </div>
+                    <div class="container-card">
+                        <img src="https://images.unsplash.com/photo-1589362281138-e3f7ebe47f1a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG9mZmljZSUyMGRlc2t8ZW58MHx8MHx8fDA%3D">
+                        <p>Office desk organizing<br>#best #organizing #office</p>
+                    </div>
+                    
+
+                </div>
+                <div class="container-row">
+                    <div class="container-card">
+                        <img src="https://images.unsplash.com/photo-1665346307491-ecd7a40efce2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZnJhbWVzfGVufDB8fDB8fHww">
+                        <h4>A wall with frames</h4>
+                        <p>#frames #wall decor #aesthetic #colourfull</p>
+                    </div>
+                    <div class="container-card">
+                        <img src="https://images.unsplash.com/photo-1655147999261-96c516dbd54b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D">
+                        <p>#art from waste #light #craft from trash #peace</p>
+                    </div>
+                    <div class="container-card">
+                        <img src="https://plus.unsplash.com/premium_photo-1713447395823-2e0b40b75a89?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2FrZXN8ZW58MHx8MHx8fDA%3D">
+                        <h4>Birthday cake ideas</h4>
+                        <p>Tasty and delicious birthday cakes. Go for it.It will Satisfy you and your taste.</p>
+                    </div>
+                    <div class="container-card">
+                        <img src="https://images.unsplash.com/photo-1711725847974-67cc75d119a0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8c3Vuc2V0JTIwcGhvdG98ZW58MHx8MHx8fDA%3D">
+                        <p>Trying to click perfect sunset photo📸 #click</p>
+                    </div>
+                    <div class="container-card">
+                        <img src="https://plus.unsplash.com/premium_photo-1726812075913-af89b672932b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aG91c2UlMjBwYWludGluZyUyMGlkZWFzfGVufDB8fDB8fHww">
+                        <p>Wall painting ideas<br>🎨🖌️<br>Get ready for your new room coloring and painting</p>
+                    </div>
+                    
+
+                </div>
+                <div class="container-row">
+                    <div class="container-card">
+                        <img src="https://plus.unsplash.com/premium_photo-1732721753645-a5ad8e62efe7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8b3JnYW5pemVyJTIwc3R1ZHklMjB0YWJlbHxlbnwwfHwwfHx8MA%3D%3D">
+                        <p>Learn to organize your study table. It will help you to increase your study time.</p>
+                    </div>
+                    <div class="container-card">
+                        <img src="https://plus.unsplash.com/premium_photo-1664373232760-0209debe810e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fG5vdmVsc3xlbnwwfHwwfHx8MA%3D%3D">
+                        <h4>A Perfect tea with your favourite novel</h4>
+                        <p>#just clicked #tea with book #perfect combo</p>
+                    </div>
+                    <div class="container-card">
+                        <img src="https://images.unsplash.com/photo-1649701954669-aa35811b62d3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YnJhY2xldHN8ZW58MHx8MHx8fDA%3D">
+                        <p>Braclets attached with GOD <br>#spirituality #blessing #god</p>
+                    </div>
+                    <div class="container-card">
+                        <img src="https://plus.unsplash.com/premium_photo-1664202526559-e21e9c0fb46a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D">
+                        <p>#new colors in market to try #aesthetic wibes #wadrobe collection</p>
+                    </div>
+                    <div class="container-card">
+                        <img src="https://images.unsplash.com/photo-1629291723587-5c694487d821?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHBob3Rvc2hvdCUyMGlkZWFzfGVufDB8fDB8fHww">
+                        <p>#aesthetic photoshoot ideas #vibes<br>Just got clicked in the classy way<br>📸</p>
+                    </div>
+                    <div class="container-card">
+                        <img src="https://media.istockphoto.com/id/1167750200/photo/paper-crafts-for-mother-day-8-march-or-birthday-small-child-doing-a-bouquet-of-flowers-out-of.jpg?s=2048x2048&w=is&k=20&c=6DO5SdXR21Wp7VmzW9tBmJY-KcXlawou11hd41MJeFU=">
+                        <p>So cute handmade cards ideas for your loved ones<br>#handmade #made with love #cuteness overloaded</p>
+                    </div>
+                    
+                </div>
+                <div class="container-row">
+                    <div class="container-card">
+                        <img src="https://plus.unsplash.com/premium_photo-1661645433820-24c8604e4db5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8amV3ZWxlcnl8ZW58MHx8MHx8fDA%3D">
+                        <p>jewelery suggestions</p>
+                    </div>
+                    <div class="container-card">
+                        <img src="https://images.unsplash.com/photo-1532254497630-c74966e79621?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGJlYWNoZXN8ZW58MHx8MHx8fDA%3D">
+                        <p>Vacation ideas🌴🏖️ #beaches #enjoy #dream vacation✈️</p>
+                    </div>
+                    <div class="container-card">
+                        <img src="https://plus.unsplash.com/premium_photo-1674815482384-8c9d646ad52e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHBhaW50aW5nc3xlbnwwfHwwfHx8MA%3D%3D">
+                        <p>Painting ideas #new #unique #easy #beautiful #creative</p>
+                    </div>
+                    <div class="container-card">
+                        <img src="https://plus.unsplash.com/premium_photo-1664297698588-25d4383a6fb0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGlwcGVuJTIwYXJ0fGVufDB8fDB8fHww">
+                        <h4>Lipstick shades💄</h4>
+                        <p>#new shades #try</p>
+                    </div>
+                    <div class="container-card">
+                        <img src="https://plus.unsplash.com/premium_photo-1675720042825-84e20074f34a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d2VkZGluZyUyMCUyMGRlY29yYXRpb258ZW58MHx8MHx8fDA%3D">
+                        <h4>Must try decoration for your next event</h4>
+                    </div>
+                    <div class="container-card">
+                        <img src="https://images.unsplash.com/photo-1634503809525-5f2c5ffa9a6e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHByb2plY3QlMjBpZGVhc3xlbnwwfHwwfHx8MA%3D%3D">
+                        <p>Qutes ideas</p>
+                    </div>
+                    
+
+                </div>
+                <div class="container-row">
+                    <div class="container-card">
+                        <img src="https://plus.unsplash.com/premium_photo-1686777551231-4487b3c1a8b9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Z2xhc3NlcyUyMGZvciUyMGdpcmxzfGVufDB8fDB8fHww">
+                        <p>Glasses for girls</p>
+                    </div>
+                   
+                    <div class="container-card">
+                        <img src="https://images.unsplash.com/photo-1722925576626-c3831b163620?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YnJlYWtmYXN0JTIwaWRlYXN8ZW58MHx8MHx8fDA%3D">
+                        <p>#aesthetic mugs #breakfast #tea #coffee #perfect time #peace of mind</p>
+                    </div>
+                    <div class="container-card">
+                        <img src="https://images.unsplash.com/photo-1533741761835-c67cadbffd3e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGRpYXJ5fGVufDB8fDB8fHww">
+                        <p>Diary 📖</p>
+                    </div>
+                    <div class="container-card">
+                        <img src="https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGZhc2hpb258ZW58MHx8MHx8fDA%3D">
+                        <h4>Fashion talk</h4>
+                        <p>#best collection #fashion sense #newest #must try outfits</p>
+                    </div>
+                    <div class="container-card">
+                        <img src="https://images.unsplash.com/photo-1644419306509-bd379c9ac127?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGdhcmRlbiUyMHRpcHN8ZW58MHx8MHx8fDA%3D">
+                        <p>Garden hacks🪴🌿<br>#greenry #plants #organizing #garden</p>
+                    </div>
+                    
+                </div>
+                <div id="imageModal" class="modal" onclick="closeImage()">
+  <img id="modalImg">
+</div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="explore.js"></script>
+    
+</body>
+</html>
